@@ -8,45 +8,45 @@ exports.limitend = (pushname) => {
 	return`Maaf ${pushname} limit hari ini telah habis\nlimit di reset setiap jam 24:00`
 }
 exports.noregis = (pushname) =>{
-	return` 🙅‍♀️ Halo ${pushname} lu belum daftar. Ketik .daftar dulu`
+	return`Halo ${pushname} lu belum daftar. Ketik .daftar dulu`
 	}
 exports.regis = () =>{
 	return` Lu udah daftar 😒`
 	}
 exports.daftar = (sender, pushname, time, serialUser, totalUser) =>{
-	return` *PENDAFTARAN BERHASIL*
+	return` *「 PENDAFTARAN BERHASIL 」*
 
-• Nama : ${pushname}
-• Nomor : ${sender.split("@")[0]}
-• Waktu : ${time}
-• Serial : ${serialUser}
-• Total User : ${totalUser.length}
+あ Nama : ${pushname}
+あ Nomor : ${sender.split("@")[0]}
+あ Waktu : ${time}
+あ Serial : ${serialUser}
+あ Total User : ${totalUser.length}
 
 Thanks yak udah daftar, sekarang ketik .menu untuk melihat 
 fitur bot.
 `
 	}
 exports.owner = (botname) =>{
-	return` 🙅‍♀️ Command khusus owner ${botname}`
+	return`Command khusus owner ${botname}`
 	}
 exports.admin = (groupName) =>{
-	return`🙅‍♀️ Command khusus admin ${groupName}`
+	return`Command khusus admin ${groupName}`
 	}
 exports.adminB = () =>{
-	return`⚠️ Bot bukan admin grup`
+	return`Bot bukan admin grup`
 	}
 exports.err = () =>{
-	return`⚠️ Fitur ini sedang eror !`
+	return`Fitur ini sedang eror !`
 	}
 exports.group = () =>{
-	return`🙅‍♀️ Command khusus di dalam group`
+	return`Command khusus di dalam group`
 	}
 
 exports.wait = () =>{
-	return`⏳ Sedang di proses ~`
+	return`_Sedang di proses..._`
 	}
 exports.ok = () =>{
-	return` ✅ Oke done ~`
+	return` ✅ _Oke done..._`
 	}
 exports.welcome = () =>{
 	return`Jangan Lupa Intro Ya~
@@ -62,67 +62,67 @@ exports.leave = () =>{
 ╰─ ᝬ _Balik Lagi Wajib Donasi Ya_ >_<`
 }
 exports.menu = (prefix, salam, pushname) =>{
-	return`Hi ${pushname}, selamat ${salam}
+	return`Hai ${pushname}, selamat ${salam}
 
-╭─⬣ *List Menu*
-│ • ${prefix}menu
-│ • ${prefix}help
-│ • ${prefix}haruka
+╭─❒ *「 Main 」*
+│ あ ${prefix}menu
+│ あ ${prefix}help
+│ あ ${prefix}haruka
 │
-├ *Download*
-│ • ${prefix}play [query]
-│ • ${prefix}song [judul lagu]
-│ • ${prefix}pinterest [query]
-│ • ${prefix}ytmp3 [url]
-│ • ${prefix}ytmp4 [url]
-│ • ${prefix}tiktok [url]
-│ • ${prefix}tiktoknowm [url]
-│ • ${prefix}tiktokwm [url]
-│ • ${prefix}tiktokaudio [url]
-│ • ${prefix}soundcloud [url]
-│ • ${prefix}telesticker [url]
+├❒ *「 Menu Download 」*
+│ あ ${prefix}play [query]
+│ あ ${prefix}song [judul lagu]
+│ あ ${prefix}pinterest [query]
+│ あ ${prefix}ytmp3 [url]
+│ あ ${prefix}ytmp4 [url]
+│ あ ${prefix}tiktok [url]
+│ あ ${prefix}tiktoknowm [url]
+│ あ ${prefix}tiktokwm [url]
+│ あ ${prefix}tiktokaudio [url]
+│ あ ${prefix}soundcloud [url]
+│ あ ${prefix}telesticker [url]
 │
-├ *Convert*
-│ • ${prefix}stiker [video/image]
-│ • ${prefix}semoji 😎
-│ • ${prefix}smeme [text]
-│ • ${prefix}memegen [text|text2]
-│ • ${prefix}fast [video/vn]
-│ • ${prefix}tupai [video/vn]
-│ • ${prefix}vibra [video/vn]
-│ • ${prefix}robot [video/vn]
-│ • ${prefix}slow [video/vn]
-│ • ${prefix}bass [video/vn]
-│ • ${prefix}nightcore [video/vn]
+├❒ *「 Menu Convert 」*
+│ あ ${prefix}stiker [video/image]
+│ あ ${prefix}semoji 😎
+│ あ ${prefix}smeme [text]
+│ あ ${prefix}memegen [text|text2]
+│ あ ${prefix}fast [video/vn]
+│ あ ${prefix}tupai [video/vn]
+│ あ ${prefix}vibra [video/vn]
+│ あ ${prefix}robot [video/vn]
+│ あ ${prefix}slow [video/vn]
+│ あ ${prefix}bass [video/vn]
+│ あ ${prefix}nightcore [video/vn]
 │
-├ *Education*
-│ • ${prefix}nuliskiri [text]
-│ • ${prefix}nuliskanan [text]
-│ • ${prefix}foliokiri [text]
-│ • ${prefix}foliokanan [text]
+├❒ *「 Menu Education 」*
+│ あ ${prefix}nuliskiri [text]
+│ あ ${prefix}nuliskanan [text]
+│ あ ${prefix}foliokiri [text]
+│ あ ${prefix}foliokanan [text]
 │
-├ *Game*
-│ • ${prefix}tebakgambar 
+├❒ *「 Menu Game 」*
+│ あ ${prefix}tebakgambar 
 │
-├ *Info*
-│ • ${prefix}owner
-│ • ${prefix}daftar
+├❒ *「 Info 」*
+│ あ ${prefix}owner
+│ あ ${prefix}daftar
 │
-├ *Owner*
-│ • ${prefix}broadcast [text]
-│ • ${prefix}leave
-│ • >
-│ • $
-│ •  => 
+├❒ *「 Menu Owner 」*
+│ あ ${prefix}broadcast [text]
+│ あ ${prefix}leave
+│ あ >
+│ あ $
+│ あ  => 
 │
-├ *Group*
-│ • ${prefix}antilink 1 / 0
-│ • ${prefix}hidetag [text]
-│ • ${prefix}linkgrup
-│ • ${prefix}tagall
-│ • ${prefix}kick @tag
-│ • ${prefix}setdesc [text] 
-│ • ${prefix}setname [text] 
+├❒ *「 Menu Group 」*
+│ あ ${prefix}antilink 1 / 0
+│ あ ${prefix}hidetag [text]
+│ あ ${prefix}linkgrup
+│ あ ${prefix}tagall
+│ あ ${prefix}kick @tag
+│ あ ${prefix}setdesc [text] 
+│ あ ${prefix}setname [text] 
 ╰─⬣
 `
 	}

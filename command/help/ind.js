@@ -5,13 +5,13 @@ Sisa limit : ${prem ? '1000' : `${limitCounts}`}
 `
 }
 exports.limitend = (pushname) => {
-	return`Maaf ${pushname} limit hari ini telah habis\nlimit di reset setiap jam 24:00`
+	return`Maaf ${pushname} limit hari ini telah habis\nlimit di reset setiap jam :00:00`
 }
 exports.noregis = (pushname) =>{
 	return`Halo ${pushname} lu belum daftar. Ketik .daftar dulu`
 	}
 exports.regis = () =>{
-	return` Lu udah daftar 😒`
+	return` Lu udah terdaftar 😒`
 	}
 exports.daftar = (sender, pushname, time, serialUser, totalUser) =>{
 	return` *「 PENDAFTARAN BERHASIL 」*
@@ -62,67 +62,68 @@ exports.leave = () =>{
 ╰─ ᝬ _Balik Lagi Wajib Donasi Ya_ >_<`
 }
 exports.menu = (prefix, salam, pushname) =>{
-	return`Hai ${pushname}, selamat ${salam}
+	return`Hai Kak ${pushname}, Selamat ${salam}
 
-╭─❒ *「 Main 」*
+╭───❒ *「 MAIN 」* 
 │ あ ${prefix}menu
 │ あ ${prefix}help
 │ あ ${prefix}haruka
 │
-├❒ *「 Menu Download 」*
-│ あ ${prefix}play [query]
-│ あ ${prefix}song [judul lagu]
-│ あ ${prefix}pinterest [query]
-│ あ ${prefix}ytmp3 [url]
-│ あ ${prefix}ytmp4 [url]
-│ あ ${prefix}tiktok [url]
-│ あ ${prefix}tiktoknowm [url]
-│ あ ${prefix}tiktokwm [url]
-│ あ ${prefix}tiktokaudio [url]
-│ あ ${prefix}soundcloud [url]
-│ あ ${prefix}telesticker [url]
+├─❒ *「 MENU DOWNLOAD 」*
+│ あ ${prefix}play <query>
+│ あ ${prefix}song <judul lagu>
+│ あ ${prefix}pinterest <query>
+│ あ ${prefix}ytmp3 <url>
+│ あ ${prefix}ytmp4 <url>
+│ あ ${prefix}tiktok <url>
+│ あ ${prefix}tiktoknowm <url>
+│ あ ${prefix}tiktokwm <url>
+│ あ ${prefix}tiktokaudio <url>
+│ あ ${prefix}soundcloud <url>
+│ あ ${prefix}telesticker <url>
 │
-├❒ *「 Menu Convert 」*
-│ あ ${prefix}stiker [video/image]
+├─❒ *「 MENU CONVERT 」*
+│ あ ${prefix}stiker <video/image>
 │ あ ${prefix}semoji 😎
-│ あ ${prefix}smeme [text]
-│ あ ${prefix}memegen [text|text2]
-│ あ ${prefix}fast [video/vn]
-│ あ ${prefix}tupai [video/vn]
-│ あ ${prefix}vibra [video/vn]
-│ あ ${prefix}robot [video/vn]
-│ あ ${prefix}slow [video/vn]
-│ あ ${prefix}bass [video/vn]
-│ あ ${prefix}nightcore [video/vn]
+│ あ ${prefix}smeme <text>
+│ あ ${prefix}memegen <text|text2>
+│ あ ${prefix}fast <video/vn>
+│ あ ${prefix}tupai <video/vn>
+│ あ ${prefix}vibra <video/vn>
+│ あ ${prefix}robot <video/vn>
+│ あ ${prefix}slow <video/vn>
+│ あ ${prefix}bass <video/vn>
+│ あ ${prefix}nightcore <video/vn>
 │
-├❒ *「 Menu Education 」*
-│ あ ${prefix}nuliskiri [text]
-│ あ ${prefix}nuliskanan [text]
-│ あ ${prefix}foliokiri [text]
-│ あ ${prefix}foliokanan [text]
+├─❒ *「 MENU EDUCATION 」*
+│ あ ${prefix}nuliskiri <text>
+│ あ ${prefix}nuliskanan <text>
+│ あ ${prefix}foliokiri <text>
+│ あ ${prefix}foliokanan <text>
 │
-├❒ *「 Menu Game 」*
+├─❒ *「 MENU GAMES 」*
 │ あ ${prefix}tebakgambar 
 │
-├❒ *「 Info 」*
+├─❒ *「 INFO 」*
 │ あ ${prefix}owner
 │ あ ${prefix}daftar
 │
-├❒ *「 Menu Owner 」*
-│ あ ${prefix}broadcast [text]
+├─❒ *「 MENU OWNER 」*
+│ あ ${prefix}broadcast <text>
 │ あ ${prefix}leave
 │ あ >
 │ あ $
 │ あ  => 
 │
-├❒ *「 Menu Group 」*
+├─❒ *「 MENU GROUP 」*
 │ あ ${prefix}antilink 1 / 0
-│ あ ${prefix}hidetag [text]
+│ あ ${prefix}hidetag <text>
 │ あ ${prefix}linkgrup
 │ あ ${prefix}tagall
 │ あ ${prefix}kick @tag
-│ あ ${prefix}setdesc [text] 
-│ あ ${prefix}setname [text] 
-╰─⬣
+│ あ ${prefix}setdesc <text>
+│ あ ${prefix}setname <text>
+│
+╰───❒
 `
 	}

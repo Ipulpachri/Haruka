@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://github.com/Ipulpachri/Haruka/IMG-20220204-WA0019.jpg
+<img src="https://github.com/Ipulpachri/Haruka/blob/2.1/IMG-20220204-WA0019.jpg
 " alt="SF BOTZ" width="200"/>
 
 <p align="center">
